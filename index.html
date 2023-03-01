@@ -1,0 +1,14 @@
+!DOCTYPE html>
+
+<html>
+<body>
+<img src="temp.jpg" alt="Photo">
+<script>
+    var url = window.location.href;
+    if (url.indexOf('rnd=') == -1) {
+        url = (url.indexOf("?") == -1 ? url + "?rnd=" : url + "&rnd=") + Math.random();
+        window.location.href = url;
+    }
+</script>
+</body>
+</html>
